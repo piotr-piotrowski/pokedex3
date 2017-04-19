@@ -60,8 +60,8 @@
                                     <constraint firstAttribute="height" constant="65" id="zXl-wH-Wu0"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" misplaced="YES" searchBarStyle="prominent" placeholder="Search  Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-I1-cyd">
-                                <rect key="frame" x="1" y="65" width="375" height="44"/>
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search  Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-I1-cyd">
+                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fzD-GG-DgL"/>
                                 </constraints>
@@ -141,11 +141,43 @@
                     <connections>
                         <outlet property="collection" destination="zBG-Kq-PN1" id="sj1-nV-utb"/>
                         <outlet property="searchBar" destination="vOo-I1-cyd" id="Ct4-TA-Qsc"/>
+                        <segue destination="wLX-2f-JFc" kind="show" identifier="PokemonDetailVC" id="UXQ-F6-Wez"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="sWz-oM-iyc">
+            <objects>
+                <viewController id="wLX-2f-JFc" customClass="PokemonDetailVC" customModule="pokedex3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rq4-S9-gQg"/>
+                        <viewControllerLayoutGuide type="bottom" id="kDM-5e-VaG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zHa-MO-cNo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koT-g3-g1Y">
+                                <rect key="frame" x="86" y="312" width="203" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="koT-g3-g1Y" id="obK-KC-AER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQa-rT-aDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
