@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F76B7FC71EA75F8F001CC413 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B7FC61EA75F8F001CC413 /* csv.swift */; };
 		F78723F61E9E4D8300EE13B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78723F51E9E4D8300EE13B3 /* AppDelegate.swift */; };
 		F78723F81E9E4D8300EE13B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78723F71E9E4D8300EE13B3 /* ViewController.swift */; };
 		F78723FB1E9E4D8300EE13B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78723F91E9E4D8300EE13B3 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F76B7FC61EA75F8F001CC413 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		F78723F21E9E4D8300EE13B3 /* pokedex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78723F51E9E4D8300EE13B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78723F71E9E4D8300EE13B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F78723F91E9E4D8300EE13B3 /* Main.storyboard */,
 				F78723FC1E9E4D8300EE13B3 /* Assets.xcassets */,
 				F78724231E9E514100EE13B3 /* pokemon.csv */,
+				F76B7FC61EA75F8F001CC413 /* csv.swift */,
 				F78723FE1E9E4D8300EE13B3 /* LaunchScreen.storyboard */,
 				F78724011E9E4D8300EE13B3 /* Info.plist */,
 			);
@@ -219,17 +222,20 @@
 					F78723F11E9E4D8300EE13B3 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = R4P7DA4C9R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F78724051E9E4D8300EE13B3 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = R4P7DA4C9R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F78723F11E9E4D8300EE13B3;
 					};
 					F78724101E9E4D8300EE13B3 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = R4P7DA4C9R;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F78723F11E9E4D8300EE13B3;
 					};
@@ -292,6 +298,7 @@
 				F78723F81E9E4D8300EE13B3 /* ViewController.swift in Sources */,
 				F78723F61E9E4D8300EE13B3 /* AppDelegate.swift in Sources */,
 				F78724271E9E552300EE13B3 /* Pokemon.swift in Sources */,
+				F76B7FC71EA75F8F001CC413 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +549,7 @@
 				F787241C1E9E4D8300EE13B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F787241D1E9E4D8300EE13B3 /* Build configuration list for PBXNativeTarget "pokedex3Tests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +558,7 @@
 				F787241F1E9E4D8300EE13B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F78724201E9E4D8300EE13B3 /* Build configuration list for PBXNativeTarget "pokedex3UITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +567,7 @@
 				F78724221E9E4D8300EE13B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
