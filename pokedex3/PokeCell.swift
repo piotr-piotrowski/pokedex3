@@ -27,4 +27,6 @@ class PokeCell: UICollectionViewCell {
         thumbImg.image = UIImage(named: "\(self.pokemon.pokedexId)")
     }
     
+    
+    
 }
