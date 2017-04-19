@@ -60,8 +60,8 @@
                                     <constraint firstAttribute="height" constant="65" id="zXl-wH-Wu0"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-I1-cyd">
-                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                            <searchBar contentMode="redraw" misplaced="YES" searchBarStyle="prominent" placeholder="Search  Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="vOo-I1-cyd">
+                                <rect key="frame" x="1" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fzD-GG-DgL"/>
                                 </constraints>
@@ -140,6 +140,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="zBG-Kq-PN1" id="sj1-nV-utb"/>
+                        <outlet property="searchBar" destination="vOo-I1-cyd" id="Ct4-TA-Qsc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
