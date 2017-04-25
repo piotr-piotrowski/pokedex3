@@ -197,7 +197,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HKw-Bu-GIA">
-                                <rect key="frame" x="16" y="73" width="288" height="268"/>
+                                <rect key="frame" x="16" y="80" width="288" height="283"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oED-Nb-IEy">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="163"/>
@@ -241,8 +241,8 @@
                                             <constraint firstAttribute="trailing" secondItem="lvQ-qM-uVr" secondAttribute="trailing" id="wt5-6r-92P"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-05-2W1">
-                                        <rect key="frame" x="0.0" y="183" width="288" height="85"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hk3-05-2W1">
+                                        <rect key="frame" x="0.0" y="183" width="288" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2zv-CQ-leN">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
@@ -284,7 +284,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GK6-HG-8Yi">
-                                                <rect key="frame" x="0.0" y="35" width="288" height="50"/>
+                                                <rect key="frame" x="0.0" y="50" width="288" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7rq-c4-Pqx">
                                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
@@ -416,7 +416,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H58-Q6-sZX" firstAttribute="top" secondItem="zHa-MO-cNo" secondAttribute="top" id="Ddg-aQ-u4v"/>
-                            <constraint firstItem="HKw-Bu-GIA" firstAttribute="top" secondItem="H58-Q6-sZX" secondAttribute="bottom" constant="8" id="KdM-bh-UpK"/>
+                            <constraint firstItem="HKw-Bu-GIA" firstAttribute="top" secondItem="H58-Q6-sZX" secondAttribute="bottom" constant="15" id="KdM-bh-UpK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HKw-Bu-GIA" secondAttribute="trailing" id="OSG-Hd-JKV"/>
                             <constraint firstAttribute="trailing" secondItem="9NB-fb-dS7" secondAttribute="trailing" id="PjR-Ax-JF8"/>
                             <constraint firstItem="kDM-5e-VaG" firstAttribute="top" secondItem="sAS-Fu-YFg" secondAttribute="bottom" constant="8" id="S9C-E8-EIK"/>

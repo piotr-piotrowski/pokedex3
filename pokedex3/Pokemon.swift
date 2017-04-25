@@ -14,7 +14,7 @@ class Pokemon {
     fileprivate var _pokedexId: Int!
     private var _description: String!
     private var _type: String!
-    private var _defence: String!
+    private var _defense: String!
     private var _height: String!
     private var _weight: String!
     private var _attack: String!
@@ -36,10 +36,10 @@ class Pokemon {
     }
     
     var defense: String {
-        if _defence == nil {
-            _defence = ""
+        if _defense == nil {
+            _defense = ""
         }
-        return _defence
+        return _defense
     }
     
     var height: String {
@@ -99,12 +99,27 @@ class Pokemon {
                     self._attack = "\(attack)"
                 }
                 if let defense = dict["defense"] as? Int {
-                    self._defence = "\(defense)"
+                    self._defense = "\(defense)"
+                }
+                if let types = dict["types"] as? [Dictionary<String, String>], types.count > 0 {
+                    if let name = types[0]["name"] {
+                        self._type = name.capitalized
+                    }
+                    if types.count > 1 {
+                        for x in 1..<types.count {
+                            if let name = types[x]["name"] {
+                                self._type! += "/\(name.capitalized)"
+                            }
+                        }
+                    }
+                } else {
+                    self._type = ""
                 }
                 print(self._weight)
                 print(self._height)
                 print(self._attack)
-                print(self._defence)
+                print(self._defense)
+                print(self._type)
             }
             completed()
         }
